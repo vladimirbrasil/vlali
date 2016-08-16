@@ -1,36 +1,40 @@
-@import "compass/css3";
-
 @import url(http://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
 
 .section{
   font-family: 'Roboto Slab', serif;
   font-weight: 500;
-  font-size: 2em;
+  font-size: 4.5vw;
   color: #fff;
   box-sizing: border-box;
   width: 100%;
   position: relative;
   float: left;
   text-align: center;
-  
-  &:nth-child(1){
-    height: 100vh;
-    line-height: 100vh;
-    background: url('http://magdeleine.co/wp-content/uploads/2014/10/14979299068_4d3bdde60c_o-1400x581.jpg');
-    background-size: cover;
-  }
-  &:nth-child(2){
-    height: 100vh;
-    line-height: 100vh;
-    background: #3498db;
-  }
-  i{
-    width: 32px;
-    height: 32px;
-    position: absolute;
-    color: #fff;
-    bottom: 5%;
-    left: 50%;
-    margin-left: -16px;
-  }
+
+  display:flex;
+  flex-direction:column;
+  justify-content:center;  
+}
+.section:nth-child(1){
+  height: 100vh;
+  /*line-height: 100vh;*/
+  background: url('http://magdeleine.co/wp-content/uploads/2014/10/14979299068_4d3bdde60c_o-1400x581.jpg');
+  background-size: cover;
+}
+.section:nth-child(2){
+  height: 100vh;
+  /*line-height: 100vh;*/
+  background: #3498db;
+}
+.section p{
+  word-wrap: break-word;
+}
+.section i{
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  color: #fff;
+  bottom: 5%;
+  left: 50%;
+  margin-left: -16px;
 }
